@@ -1,0 +1,40 @@
+using System;
+
+namespace ResponsiPemrograman4393
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string nama[20], nik[20];
+      int gaji[20], kenaikan=0, jum;
+      Console.WriteLine("Menghitung Gaji Karyawan");
+      Console.WriteLine("------------------------");
+      Console.WriteLine(""); 
+      Console.WriteLine("jumlah Karyawan Yang Ingin di inputkan \t: "); 
+      jum=int.Parse(Console.ReadLine());  
+      //Diberikan Kenaikan Gaji 10%
+      kenaikan= gaji * (10/100);
+      for(int i=0;i<=jum;i++)
+      {
+        Console.WriteLine("Nama Karyawan \t: ");
+        nama=Console.ReadLine();
+        Console.WriteLine(" Masukan NIK \t: ");
+        nik=Console.ReadLine();
+        Console.WriteLine("Masukan Gaji Pokok \t: ");
+        gaji=int.Parse(Console.ReadLine());
+       }
+       
+       
+        Console.WrriteLine("");
+        Console.WrriteLine("--------------------------");
+        Console.WrriteLine("Nama                : "+nama);
+        Console.WrriteLine("NIK                 : "+nik);
+        Console.WrriteLine("Gaji Pokok          : "+gaji[20]);
+        Console.WrriteLine("Kenaikan Gaji       : "+kenaikan);
+        Console.Read();
+        
+      }
+    }
+}
+     
